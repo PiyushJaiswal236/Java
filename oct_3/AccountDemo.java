@@ -15,7 +15,7 @@ public class AccountDemo {
         CurrentAccount ca = new CurrentAccount();
         ca.holder_name = "Vijay";
         ca.account_no = 123456;
-        ca.balance = 10000;
+        ca.balance = 5000;
         ca.type = "Current";
         ca.deposit(5000);
         ca.withdraw(2000);
@@ -45,7 +45,7 @@ class SavaingAccount extends Account {
     void deposit(int amount) {
         balance += amount;
         System.out.println("Deposit successful");
-        System.out.println("Current balance is " + balance);
+        System.out.println("Balance After Deposit is " + balance);
     }
 
     @Override
@@ -81,7 +81,7 @@ class CurrentAccount extends Account {
     void deposit(int amount) {
         balance += amount;
         System.out.println("Deposit successful");
-        System.out.println("Current balance is " + balance);
+        System.out.println("Balance After Deposit is " + balance);
     }
 
     @Override
